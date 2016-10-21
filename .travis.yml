@@ -1,0 +1,6 @@
+language: ruby
+cache:
+  directories: random/submodule
+
+script:
+- ls -al

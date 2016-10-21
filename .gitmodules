@@ -1,0 +1,3 @@
+[submodule "random/submodule"]
+	path = random/submodule
+	url = https://github.com/segiddins/Sipquick.git
