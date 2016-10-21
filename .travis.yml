@@ -2,6 +2,18 @@ language: ruby
 cache:
   directories: random/submodule
 
+addons:
+  apt:
+    packages:
+    - file
+
 script:
 - ls -al
 - file .travis.yml
+- wget https://github.com/realm/realm-cocoa/releases/download/v0.98.4/Carthage.framework.zip
+- unzip Carthage.framework.zip
+- file Carthage/Build/iOS/Realm.framework/Realm
+- file -k Carthage/Build/iOS/Realm.framework/Realm
+- which file
+- file --version
+- file --help
