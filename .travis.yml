@@ -4,3 +4,4 @@ cache:
 
 script:
 - ls -al
+- file .travis.yml
