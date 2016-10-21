@@ -2,10 +2,8 @@ language: ruby
 cache:
   directories: random/submodule
 
-addons:
-  apt:
-    packages:
-    - file
+install:
+- (git clone https://github.com/file/file && cd file && autoreconf -f -i && ./configure --disable-silent-rules && make -j4 && make install)
 
 script:
 - ls -al
